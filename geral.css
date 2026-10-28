@@ -1,0 +1,70 @@
+/* ====================== ESTILO (CSS) ====================== */
+    :root {
+      --azul: #2563eb;
+      --azul-escuro: #1e40af;
+      --cinza-fundo: #f4f5f7;
+      --cinza-borda: #d9dce1;
+      --texto: #1f2430;
+      --vermelho: #dc2626;
+      --verde: #16a34a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--cinza-fundo);
+      color: var(--texto);
+      line-height: 1.5;
+      padding: 24px;
+    }
+
+    .container { max-width: 720px; margin: 0 auto; }
+
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    .subtitulo { color: #6b7280; margin-bottom: 24px; font-size: 0.95rem; }
+
+    .cartao {
+      background: #fff;
+      border: 1px solid var(--cinza-borda);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* --- Formulário --- */
+    .campo { margin-bottom: 14px; }
+    label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; }
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--cinza-borda);
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    input:focus { outline: 2px solid var(--azul); border-color: var(--azul); }
+
+    .botoes { display: flex; gap: 8px; margin-top: 8px; }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .btn-principal { background: var(--azul); color: #fff; }
+    .btn-principal:hover { background: var(--azul-escuro); }
+    .btn-cancelar { background: #e5e7eb; color: var(--texto); display: none; }
+
+    /* --- Tabela --- */
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--cinza-borda); }
+    th { font-size: 0.8rem; text-transform: uppercase; color: #6b7280; }
+    td .acoes { display: flex; gap: 6px; }
+    .btn-mini { padding: 5px 10px; font-size: 0.8rem; }
+    .btn-editar { background: #fef3c7; color: #92400e; }
+    .btn-excluir { background: #fee2e2; color: var(--vermelho); }
+
+    .vazio { text-align: center; color: #9ca3af; padding: 24px; }
